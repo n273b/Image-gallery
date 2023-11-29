@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: ease-out;
+    scroll-behavior: smooth;
+}
+.body{
+    min-height: 100vh;
+}
+span{
+    color: grey;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: aliceblue;
+    padding: 5px 0px;
+    transition: 0.6s;
+    z-index: 1000;
+}
+.navbar ul li a{
+    position: relative;
+    margin: 0 15px;
+    color: black;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+.hide{
+    display: none;  
+}
+.navbar ul li a:hover + .hide{
+    display: flex;   
+    width: 10%;
+    color: black; 
+    margin-left: 1;
+    z-index: 1000;
+}
+.home, .image_slider{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Chakra Petch', sans-serif;
+    color: black;
+    transition: 0.6s;
+}
+.logo{
+    font-size: xx-large;
+    margin-left: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    color: black;
+    transition: 0.6s;
+}
+.sections{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home, .image_slider{
+   text-decoration: none;
+   list-style-type: none; 
+}
+#image_slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+.button{
+    background-color: rgb(76, 75, 75);
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 4px 4px 2px rgb(218, 215, 215);
+}
+.button:hover{
+    background-color: black;
+    color: rgb(215, 225, 234); 
+    cursor: pointer;
+}
+.button:active{
+    background-color: black;
+    box-shadow: 4px 4px 3px lightblue;
+    transform: translateY(-3px);
+    transition: 0.4s;
+    /* transform: translateX(2px); */
+}
+.buy_now{
+    color: azure;
+    height: 42px;   
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: x-large;
+    
+}
+#home{
+    background-image: url(background\ image\ for\ baby\ shop3.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.text{
+    padding-left: 45%;
+}
+.h1{
+    font-size: 67px;
+    color: black;
+    padding: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    text-shadow: 2px 2px 8px lightskyblue;    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #eee;
+    box-shadow: 0 8px 8px -4px lightblue;
+    padding-bottom: 20px;
+    margin: 50px;
+}
+.card:hover{
+    transform: translateY(-1rem);
+    /* transform: translateX(1rem); */
+    top: -4px;
+    border: 1.15px solid #001C30;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    transition: all 0.4s ease-out;
+    background-color: white;
+}
+.card-header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+img{
+    height: 250px;
+    width: 280px;
+    border-radius: 3%;
+    cursor: pointer;
+}
+/* .parent-image{
+    position: relative;
+} */
+.child-image{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.button{
+    height: 30px;
+    width: fit-content;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hidden{
+    display: none;
+}
+#fullImageBox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+#fullImage{
+    width: 380px;
+    height: 350px;
+}
+.nav-btn{
+    height: 40px;
+    width: 40px;
+}
+#crossBtn{
+    color: whitesmoke;
+    background-color: rgb(77, 74, 74);
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    position: absolute;
+    top: 56px;
+    right: 5px;
+}
+#downloadBtn{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 132px;
+    left: 440px;
+    z-index: 1000;
+}
+
+.work-data{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom right, rgb(4, 43, 47), rgb(10, 57, 65), rgb(8, 128, 150), rgb(85, 236, 253), rgb(3, 104, 115));
+    background: lightslategray;
+    padding: 10vh;
+}
+.about-work-data{
+    display: flex;
+    flex-direction: column;
+}
+.about-work-data span{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: rgb(122, 208, 236);
+}
+.work-data p{
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
